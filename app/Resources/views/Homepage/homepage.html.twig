@@ -1,0 +1,40 @@
+{% extends "::default/index.html.twig" %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+    <div>
+        {% include('default/index.html.twig') %}
+    </div>
+    <div class="blockHomepage">
+        <div>
+            <img src="{{ asset('images/kimono_imperial_2.png') }}" class="stripImgHomepage">
+            <h1 class="logoHomepage">French Mustard</h1>
+        </div>
+        <p class="pHomepage"> Des petites robes noires élégantes et pétillantes, habillées de collants iconiques et de lingerie. </p>
+        <div class="leftImgHomepage">
+            <div>
+                <img src="{{ asset('images/robe_citron_3.png') }}" class="bigImgHomepage">
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonDress"><h2>Robes</h2></button>
+            </div>
+            <div>
+                <img src="{{ asset('images/collants.jpg') }}" class="bottomBigImgHomepage">
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonTights"><h2>Collants</h2></button>
+            </div>
+        </div>
+        <div class="rightImgHomepage">
+            <div>
+                <img src="{{ asset('images/haut_orange_2.png') }}" class="smallImgHomepage marginSmallImg">
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonShirts"><h2>Hauts</h2></button>
+            </div>
+            <div>
+                <img src="{{ asset('images/jupe_haut_venitien_2.png') }}" class="smallImgHomepage marginSmallImg" id="objectPosition">
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonSkirts"><h2>Jupes</h2></button>
+            </div>
+            <div>
+                <img src="{{ asset('images/kimono_imerial_couleur.jpg') }}" class="smallImgHomepage">
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonUnderwear"><h2>Lingerie</h2></button>
+            </div>
+        </div>
+    </div>
+{% endblock %}

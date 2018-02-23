@@ -1,0 +1,49 @@
+#blockContact{
+    margin-top: 31vh;
+}
+
+h3{
+    font-family: "Selfie", sans serif;
+    color: white;
+    font-size: 38px;
+}
+
+.imgContact{
+    width: 45px;
+    height: 45px;
+    margin-top: 7vh;
+}
+
+.pContact{
+    font-size: 21px;
+    margin-top: 2vh;
+}
+
+.inputContact{
+    height: 45px;
+    background: transparent;
+    border-color: white;
+    border-width: 2px;
+}
+
+::placeholder{
+    color: black !important;
+    font-size: 18px;
+    font-family: "Futura Lt BT", sans serif;
+}
+
+.marginInput{
+    margin-top: 5px;
+}
+
+.btnContact{
+    margin-top: 5px;
+    float: right;
+    height: 56px;
+    width: 86px;
+    background-color: rgba(169, 135, 0, 1);
+    font-family: Selfie;
+    border: none;
+    font-size: 33px;
+    padding-left: 5px;
+}
