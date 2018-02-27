@@ -1,0 +1,66 @@
+body{
+    background-color: gold;
+}
+
+p{
+    font-family: 'Futura CondensedLight', sans serif;
+    font-weight: bolder;
+    color: white;
+}
+
+li {
+    margin-top: 60px;
+}
+
+.pNav{
+    color: white;
+    font-size: 21px;
+    margin-top: 15px;
+}
+
+.navSize{
+    height: 170px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+
+.aNavColor :hover{
+    color: black;
+}
+
+.logo{
+    font-family: Selfie, sans serif;
+    font-size: 54px;
+    margin-top: 70px;
+    font-weight: bold;
+    color: white;
+    padding-left: 60px;
+}
+
+.marginBody{
+    margin-top: 170px;
+}
+
+#navStrip{
+    Background-color: gold;
+    opacity: 0.8;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    margin-top: 65px;
+}
+
+.imgFooter{
+    text-align: center;
+}
+
+.imgFooter img{
+    width: 40px;
+    height: 40px;
+}
+
+.imgFooter span{
+    margin-right: 10px;
+}

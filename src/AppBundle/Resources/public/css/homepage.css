@@ -1,0 +1,119 @@
+.stripImgHomepage{
+    margin-left: 1%;
+    height: 400px;
+    width: 98%;
+    object-fit: cover;
+    margin-top: 170px;
+}
+
+.logoHomepage{
+    font-family: Selfie, sans serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pHomepage{
+    font-family: "American Typewriter", sans serif;
+    margin: 40px 20%;
+    font-size: 31px;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.blockHomepage{
+    width: 100%;
+}
+
+.bigImgHomepage{
+    height: 85vh;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 7vh;
+}
+
+.bottomBigImgHomepage{
+    width:100%;
+    height: 60vh;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.leftImgHomepage{
+    width: 30%;
+    height: 160vh;
+    margin: 20px 10px 0px 17%;
+    display: inline-block;
+}
+
+.rightImgHomepage {
+    width: 33%;
+    height: 160vh;
+    margin-top : 10px;
+    margin-right: 16%;
+    float: right;
+}
+
+.smallImgHomepage{
+    width: 100%;
+    height: 48vh;
+    object-fit: cover;
+}
+
+#objectPosition{
+    object-position: bottom;
+}
+
+.marginSmallImg{
+    margin-bottom: 4vh;
+}
+
+h2{
+    font-family: Selfie, sans serif;
+    font-size: 37px;
+    text-align: center;
+}
+
+.buttonsHomepage{
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    position: absolute;
+    background-color: gold;
+    border: none;
+    width: 105px;
+    height: 105px;
+    border-radius: 60px;
+    padding-bottom: 22px;
+}
+
+#buttonDress {
+     top: 180%;
+     left: 40%;
+ }
+
+#buttonTights {
+    top: 227%;
+    left: 42%;
+}
+
+#buttonShirts{
+    top: 143%;
+    left: 59%;
+}
+
+#buttonSkirts{
+    top: 200%;
+    left: 60%;
+}
+
+#buttonUnderwear{
+    top: 255%;
+    left: 67%;
+    width: 115px;
+    height: 115px;
+}

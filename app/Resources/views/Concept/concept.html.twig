@@ -1,0 +1,28 @@
+{% extends "::default/index.html.twig" %}
+
+{% block head %} <link rel="stylesheet" href="{{ asset("bundles/app/css/concept.css") }}"  type="text/css"/> {% endblock %}
+
+{% block title %}Concept{% endblock %}
+
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+    <div>
+        {% include('default/index.html.twig') %}
+    </div>
+    <div class="container marginBody">
+        <div class="col-xs-1"></div>
+        <div  class="col-xs-5">
+            <p class="pConcept">La marque French Mustard est une marque de prêt-à-porter pour femmes, proposant des robes, jupes et hauts élégants et iconiques, habillés de collants ou d’une pièce de lingerie.</p>
+            <p class="pConcept">L'achat des vêtements se fera sur un site internet marchand ; directement de l'atelier à votre placard !</p>
+            <p class="pConcept">Nous savons que l'achat sur internet fait parfois des déçu(e)s, nous mettons donc à votre disposition un showroom afin que les clientes puissent venir essayer les vêtements en boutique.</p>
+        </div>
+        <div class="col-xs-5">
+            <img src="{{ asset('images/robe_banane_2.png') }}" class="imgConcept">
+        </div>
+        <div id="navStrip"></div>
+            {% include('default/footer.html.twig') %}
+        </div>
+    </div>
+
+{% endblock %}

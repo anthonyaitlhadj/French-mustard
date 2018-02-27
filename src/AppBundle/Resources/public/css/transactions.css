@@ -1,0 +1,8 @@
+.displayExpiration input{
+    float: right;
+    width: 50%;
+}
+
+.displayExpiration{
+    margin-bottom: 55px;
+}

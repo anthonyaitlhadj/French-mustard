@@ -1,0 +1,39 @@
+{% extends "::default/index.html.twig" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+    <div>
+        {% include('default/index.html.twig') %}
+    </div>
+    <div class="container">
+        <div id="blockContact">
+            <div class="col-xs-1"></div>
+            <div class="col-xs-5">
+                <h3>Delphine Griffet</h3>
+                <p class="pContact">hello.frenchmustard@gmail.com</p>
+                <p class="pContact">Paris 15</p>
+                <div>
+                    <img src="{{ asset('images/if_facebook.png') }}" class="imgContact">
+                    <img src="{{ asset('images/if_instagram.png') }}" class="imgContact">
+                    <img src="{{ asset('images/if_youtube.png') }}" class="imgContact">
+                    <img src="{{ asset('images/if_pinterest.png') }}" class="imgContact">
+                </div>
+            </div>
+            <div class="col-xs-5">
+                {{ form_start(form) }}
+                    {{ form_errors(form.email) }}
+                    {{ form_widget(form.email, {'attr': {'class': 'form-control inputContact','id': 'exampleInputEmail1'}}) }}
+                    {{ form_errors(form.subject) }}
+                    {{ form_widget(form.subject, {'attr': {'class': 'form-control inputContact marginInput'}}) }}
+                    {{ form_errors(form.message) }}
+                    {{ form_widget(form.message, {'attr': {'class': 'form-control inputContact marginInput', 'rows': '4'}}) }}
+                    <div>
+                        <button type='submit' name="submit" class='btn btn-success btnContact'>Envoyer</button>
+                    </div>
+                {{ form_end(form) }}
+            </div>
+            <div class="col-xs-1"></div>
+        </div>
+    </div>
+{% endblock %}
