@@ -1,0 +1,59 @@
+body
+{
+    margin-left: 200px;
+}
+
+#image
+{
+    width: 498px;
+    height: 498px;
+    margin-top: 200px;
+}
+
+#article
+{
+    margin-top: 200px;
+    float: right;
+    width: 550px;
+    height: 550px;
+}
+
+#style
+{
+    width: 90px;
+}
+
+#style input
+{
+    height: 40px;
+    width: 50px;
+}
+
+button
+{
+    margin-top: 15px;
+    width: 315px;
+    height: 35px;
+}
+
+#price
+{
+    color: gray;
+}
+
+h1
+{
+    margin-top: 50px;
+}
+
+#detail h3
+{
+    text-transform: uppercase;
+    border-top-color: gray;
+}
+
+#recommandation
+{
+    width: 90px;
+    height: 90px;
+}

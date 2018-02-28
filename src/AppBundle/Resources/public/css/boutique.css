@@ -1,0 +1,15 @@
+img
+{
+    width: 224px;
+    height: 224px;
+}
+
+h4
+{
+    font-family: "Futura Lt BT", sans serif;
+}
+
+.price
+{
+    color: gray;
+}

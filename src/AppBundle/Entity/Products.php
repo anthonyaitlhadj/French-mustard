@@ -5,10 +5,10 @@ namespace AppBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Products
+ * Product
  *
- * @ORM\Table(name="products")
- * @ORM\Entity(repositoryClass="AppBundle\Repository\ProductsRepository")
+ * @ORM\Table(name="product")
+ * @ORM\Entity(repositoryClass="AppBundle\Repository\ProductRepository")
  */
 class Products
 {
@@ -24,23 +24,23 @@ class Products
     /**
      * @var string
      *
-     * @ORM\Column(name="productName", type="string", length=255)
+     * @ORM\Column(name="product_name", type="string", length=255, unique=true)
      */
     private $productName;
 
     /**
-     * @var float
+     * @var string
      *
-     * @ORM\Column(name="productPrice", type="float")
+     * @ORM\Column(name="amount", type="string")
      */
-    private $productPrice;
+    private $amount;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="productDescription", type="string", length=255)
+     * @ORM\Column(name="description", type="text")
      */
-    private $productDescription;
+    private $description;
 
 
     /**
@@ -78,51 +78,51 @@ class Products
     }
 
     /**
-     * Set productPrice
+     * Set amount
      *
-     * @param float $productPrice
+     * @param string $amount
      *
      * @return Products
      */
-    public function setProductPrice($productPrice)
+    public function setAmount($amount)
     {
-        $this->productPrice = $productPrice;
+        $this->amount = $amount;
 
         return $this;
     }
 
     /**
-     * Get productPrice
-     *
-     * @return float
-     */
-    public function getProductPrice()
-    {
-        return $this->productPrice;
-    }
-
-    /**
-     * Set productDescription
-     *
-     * @param string $productDescription
-     *
-     * @return Products
-     */
-    public function setProductDescription($productDescription)
-    {
-        $this->productDescription = $productDescription;
-
-        return $this;
-    }
-
-    /**
-     * Get productDescription
+     * Get amount
      *
      * @return string
      */
-    public function getProductDescription()
+    public function getAmount()
     {
-        return $this->productDescription;
+        return $this->amount;
+    }
+
+    /**
+     * Set description
+     *
+     * @param string $description
+     *
+     * @return Products
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+
+        return $this;
+    }
+
+    /**
+     * Get description
+     *
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
     }
 }
 

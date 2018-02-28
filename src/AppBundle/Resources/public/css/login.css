@@ -1,0 +1,27 @@
+body
+{
+    background-color: gold;
+}
+
+.inputLogin{
+    height: 45px;
+    background: transparent;
+    border-color: white;
+    border-width: 2px;
+}
+
+::placeholder{
+    color: black !important;
+    font-size: 18px;
+    font-family: "Futura Lt BT", sans serif;
+}
+
+.btnLogin{
+    height: 56px;
+    width: 100px;
+    background-color: rgba(169, 135, 0, 1);
+    font-family: Selfie, sans-serif;
+    border: none;
+    font-size: 33px;
+    padding-left: 5px;
+}

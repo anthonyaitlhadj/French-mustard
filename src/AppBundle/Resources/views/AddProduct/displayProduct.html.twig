@@ -1,0 +1,18 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AddProduct{% endblock %}
+
+{% block body %}
+
+    <div class="form-group">
+        <div>
+            {% for product in products %}
+                <div id="article">
+                    <a href=""> <img src="https://static.wixstatic.com/media/a9ff3b_b2039d1e6a954631a41b85d674400f19.jpg/v1/fill/w_500,h_500,q_85,usm_0.66_1.00_0.01/a9ff3b_b2039d1e6a954631a41b85d674400f19.jpg"></a>
+                    <h4>{{ product.ProductName }}</h4>
+                    <h4 class="price">€{{ product.amount }}</h4>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
