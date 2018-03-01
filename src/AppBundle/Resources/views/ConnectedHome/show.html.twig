@@ -1,10 +1,10 @@
-{% extends "::default/index.html.twig" %}
+{% extends 'base.html.twig' %}
 
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
     <div class="navStrip">
-        {% include('default/index.html.twig') %}
+        {% include 'navConnected.html.twig' %}
     </div>
     <div class="blockHomepage">
         <div>
@@ -15,29 +15,29 @@
         <div class="leftImgHomepage">
             <div>
                 <img src="{{ asset('images/robe_citron_3.png') }}" class="bigImgHomepage">
-                <button type="button" onclick="location.href='/showproduct';" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonDress" href=""><h2>Robes</h2></button>
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonDress" href="/showproduct"><h2>Robes</h2></button>
             </div>
             <div>
                 <img src="{{ asset('images/collants.jpg') }}" class="bottomBigImgHomepage">
-                <button type="button" onclick="location.href='/showproduct';" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonTights"><h2>Collants</h2></button>
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonTights"><h2>Collants</h2></button>
             </div>
         </div>
         <div class="rightImgHomepage">
             <div>
                 <img src="{{ asset('images/haut_orange_2.png') }}" class="smallImgHomepage marginSmallImg">
-                <button type="button" onclick="location.href='/showproduct';" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonShirts"><h2>Hauts</h2></button>
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonShirts"><h2>Hauts</h2></button>
             </div>
             <div>
                 <img src="{{ asset('images/jupe_haut_venitien_2.png') }}" class="smallImgHomepage marginSmallImg" id="objectPosition">
-                <button type="button" onclick="location.href='/showproduct';" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonSkirts"><h2>Jupes</h2></button>
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonSkirts"><h2>Jupes</h2></button>
             </div>
             <div>
                 <img src="{{ asset('images/kimono_imerial_couleur.jpg') }}" class="smallImgHomepage">
-                <button type="button" onclick="location.href='/showproduct';" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonUnderwear"><h2>Lingerie</h2></button>
+                <button type="button" class="btn btn-warning btn-circle btn-xl buttonsHomepage" id="buttonUnderwear"><h2>Lingerie</h2></button>
             </div>
         </div>
         <div id="navStrip"></div>
-            {% include('default/footer.html.twig') %}
-        </div>
+        {% include('default/footer.html.twig') %}
+    </div>
     </div>
 {% endblock %}

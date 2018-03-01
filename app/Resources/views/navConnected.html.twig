@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}<div id="navStrip">
+    <div class="navSize">
+        <div class="container">
+            <div class="col-xs-6">
+                <a href="/"><img src="{{ asset('images/FrenchMustardBlanc.png') }}" class="logo"></a>
+            </div>
+            <ul class="nav nav-pills col-xs-6">
+                <li><a href="/home" class="aNavColor"><p class="pNav">Accueil</p></a></li>
+                <li><a href="/lookbook" class="aNavColor"><p class="pNav">Lookbook</p></a></li>
+                <li><a href="/showproduct" class="aNavColor"><p class="pNav">Boutique</p></a></li>
+                <li><a href="/contact" class="aNavColor"><p class="pNav">Contact</p></a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+{% endblock %}

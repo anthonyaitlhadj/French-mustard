@@ -2,12 +2,6 @@ body{
     background-color: gold;
 }
 
-p{
-    font-family: 'Futura CondensedLight', sans serif;
-    font-weight: bolder;
-    color: white;
-}
-
 li {
     margin-top: 60px;
 }
@@ -23,7 +17,7 @@ li {
     width: 100%;
     position: fixed;
     top: 0;
-    z-index: 3;
+    z-index: 5;
 }
 
 .aNavColor :hover{
@@ -31,29 +25,31 @@ li {
 }
 
 .logo{
-    font-family: Selfie, sans serif;
-    font-size: 54px;
-    margin-top: 70px;
-    font-weight: bold;
-    color: white;
-    padding-left: 60px;
+    width: 100px;
+    height: 100px;
+    margin-top: 30px;
 }
 
 .marginBody{
     margin-top: 170px;
 }
 
-#navStrip{
+.navStrip{
     Background-color: gold;
     opacity: 0.8;
-    height: 70px;
+    height: 112px;
     width: 100%;
     position: fixed;
-    margin-top: 65px;
+    margin-top: 25px;
+    z-index: 4;
+    top:0;
 }
 
 .imgFooter{
     text-align: center;
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
 }
 
 .imgFooter img{

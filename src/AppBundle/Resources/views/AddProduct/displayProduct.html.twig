@@ -1,0 +1,23 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}AddProduct{% endblock %}
+
+{% block body %}
+    <div class="navStrip">
+        {% include('navConnected.html.twig') %}
+    </div>
+    <div class="form-group">
+        <div class="container marginBody centerForm">
+            {% for product in products %}
+                <div class="col-xs-3" id="article">
+                    <a href=""> <img src="{{ asset('images/face.jpg') }}"></a>
+                    <h4>{{ product.ProductName }}</h4>
+                    <h4 class="price">€{{ product.amount }}</h4>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div>
+        {% include('default/footer.html.twig') %}
+    </div>
+{% endblock %}

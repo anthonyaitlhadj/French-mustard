@@ -1,0 +1,49 @@
+#image
+{
+    width: 100%;
+}
+
+#style{
+    text-align: left !important;
+    margin-bottom: 20px;
+}
+
+button
+{
+    margin-top: 15px;
+    width: 315px;
+    height: 35px;
+}
+
+#price
+{
+    color: gray;
+}
+
+h1
+{
+    margin-top: 50px;
+}
+
+.detail
+{
+    margin-top: 30px;
+    z-index: 2;
+    border: 2px;
+    border-top-color: gray;
+}
+
+.detail h3{
+    text-transform: uppercase;
+}
+
+#recommandation{
+    text-align: left;
+    margin-left: 130px;
+}
+
+#recommandation img
+{
+    width: 90px;
+    height: 90px;
+}

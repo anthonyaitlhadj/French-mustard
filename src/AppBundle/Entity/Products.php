@@ -31,16 +31,16 @@ class Products
     /**
      * @var float
      *
-     * @ORM\Column(name="productPrice", type="float")
+     * @ORM\Column(name="amount", type="float")
      */
-    private $productPrice;
+    private $amount;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="productDescription", type="string", length=255)
+     * @ORM\Column(name="description", type="string", length=255)
      */
-    private $productDescription;
+    private $description;
 
 
     /**
@@ -80,49 +80,49 @@ class Products
     /**
      * Set productPrice
      *
-     * @param float $productPrice
+     * @param float $amount
      *
      * @return Products
      */
-    public function setProductPrice($productPrice)
+    public function setAmount($amount)
     {
-        $this->productPrice = $productPrice;
+        $this->amount = $amount;
 
         return $this;
     }
 
     /**
-     * Get productPrice
+     * Get amount
      *
      * @return float
      */
-    public function getProductPrice()
+    public function getAmount()
     {
-        return $this->productPrice;
+        return $this->amount;
     }
 
     /**
-     * Set productDescription
+     * Set description
      *
-     * @param string $productDescription
+     * @param string $description
      *
      * @return Products
      */
-    public function setProductDescription($productDescription)
+    public function setDescription($description)
     {
-        $this->productDescription = $productDescription;
+        $this->description = $description;
 
         return $this;
     }
 
     /**
-     * Get productDescription
+     * Get description
      *
      * @return string
      */
-    public function getProductDescription()
+    public function getDescription()
     {
-        return $this->productDescription;
+        return $this->description;
     }
 }
 

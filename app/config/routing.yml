@@ -1,3 +1,11 @@
 app:
     resource: '@AppBundle/Controller/'
     type: annotation
+
+login:
+    path: /login
+    defaults: {_controller: AppBundle:Authentification:login}
+
+shop:
+    path: /showproduct
+    defaults: {_controller: AppBundle:AddProduct:ShowData}

@@ -1,0 +1,50 @@
+{% extends "base.html.twig" %}
+
+{% block title %}AddProduct{% endblock %}
+
+{% block body %}
+    <div class="navStrip">
+        {% include 'navConnected.html.twig' %}
+    </div>
+    <div class="container marginBody">
+        <div class="col-xs-6">
+            <a href="" > <img id="image" src="{{ asset('images/face.jpg') }}"></a>
+            <h3>{{ product.description }}</h3>
+        </div>
+        <div id="article" class="col-xs-6">
+            <div id="style">
+                <h4>{{ product.ProductName }}</h4>
+                <h4 id="price">€{{ product.amount }}</h4>
+                <div>
+                    <label>Quantité : </label>
+                    <input type="number" min="1" max="20" value="1"/>
+                </div>
+                <button type="submit" onclick="location.href='/transaction';" class="btn btn-primary col-xs-6">Acheter</button>
+            </div>
+                <div class="col-xs-12">
+                    <div class="detail">
+                        <h3>Détails d'article</h3>
+                        <p>Détails d'article. Saisissez ici les caractéristiques de l'article : taille, matière et autres détails utiles. Cet emplacement est idéal pour expliquer les avantages de cet article à vos clients.</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Politique d'échange et de remboursement</h3>
+                        <p>Politique d'échange et de remboursement. Informez vos visiteurs des conditions d'échange et de remboursement des articles qu'ils achètent sur votre site. Énoncez clairement vos conditions afin d'établir une relation de confiance avec vos clients et leur permettre ainsi d'acheter sur votre site en toute sécurité.</p>
+                    </div>
+                    <div class="detail">
+                        <h3>Info de livraison</h3>
+                        <p>Condition de livraison. Idéal pour ajouter davantage de détails sur vos modes de livraison et conditionnement et vos prix. Fournissez des informations claires sur vos modes de livraison afin de rassurer vos clients et gagner leur confiance.</p>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div id="recommandation">
+        <h1>Recommandation:</h1>
+        <a href="/showproduct/1"> <img src="https://static.wixstatic.com/media/a9ff3b_b2039d1e6a954631a41b85d674400f19.jpg/v1/fill/w_500,h_500,q_85,usm_0.66_1.00_0.01/a9ff3b_b2039d1e6a954631a41b85d674400f19.jpg"></a>
+    </div>
+
+    <div>
+        {% include 'default/footer.html.twig' %}
+    </div>
+{% endblock %}

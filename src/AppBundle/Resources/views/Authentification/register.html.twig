@@ -3,42 +3,46 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
-    <div class="panel panel-default" style="margin-left: 180px; margin-top:50px;width: 900px;">
-        <div class="panel-heading">Register
-        </div>
-        <div class="panel-body">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="form-group">
-                        <label for="lastname">Lastname</label>
-                        {{ form(lastname) }}
-                    </div>
-                    <div class="form-group">
-                        <label for="firstname">Firstname</label>
-                        <input type="text" class="form-control" id="firstname" name="firstname">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" name="password">
-                    </div>
-                    <div class="form-group">
-                        <label for="nb_card">Number Card</label>
-                        <input type="text" class="form-control" id="nb_card" name="nb_card">
-                    </div>
-                    <div class="form-group">
-                        <label for="cryptogram">Cryptogram</label>
-                        <input type="text" class="form-control" id="cryptogram" name="cryptogram">
-                    </div>
-                    <div class="form-group">
-                        <label for="expiration_date">Expiration Date</label>
-                        <input type="text" class="form-control" id="expiration_date" name="expiration_date">
-                    </div>
+
+    <div>
+        {% include('default/index.html.twig') %}
+    </div>
+
+<div class="container marginBody centerForm">
+    <div class="col-xs-4 centerText">
+        {{ form_start(form, {'attr': {'class': 'form-horizontal'}}) }}
+
+            <div class="form-group">
+                <div>
+                    {{ form_errors(form.lastname) }}
+                    {{ form_widget(form.lastname, {'attr': {'class': 'col-sm-3 form-control inputLogin'}}) }}
                 </div>
             </div>
+            <div class="form-group">
+                <div>
+                    {{ form_errors(form.firstname) }}
+                    {{ form_widget(form.firstname, {'attr': {'class': 'col-sm-3 form-control inputLogin'}}) }}
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    {{ form_errors(form.email) }}
+                    {{ form_widget(form.email, {'attr': {'class': 'col-sm-3 form-control inputLogin'}}) }}
+                </div>
+            </div>
+            <div class="form-group">
+                <div>
+                    {{ form_errors(form.password) }}
+                    {{ form_widget(form.password, {'attr': {'class': 'col-sm-3 form-control inputLogin'}}) }}
+                </div>
+            </div>
+            <div>
+                <button type='submit' name="submit" class='btn btn-success btnLogin'>Inscription</button>
+            </div>
+        {{ form_end(form) }}
         </div>
+    </div>
+    <div>
+        {% include('default/footer.html.twig') %}
     </div>
 {% endblock %}

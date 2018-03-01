@@ -1,0 +1,35 @@
+{% extends "::default/index.html.twig" %}
+
+{% block title %}Paiement{% endblock %}
+
+{% block body %}
+    <div>
+        {% include('default/index.html.twig') %}
+    </div>
+    <div class ="container marginBody">
+        <div class="col-xs-3"></div>
+        <div class="col-xs-6">
+            <h1>Transaction</h1>
+            {{ form_start(form) }}
+            {{ form_errors(form.CustomerName) }}
+            {{ form_widget(form.CustomerName, {'attr': {'class': 'form-control inputContact'}}) }}
+            {{ form_errors(form.CardNumber) }}
+            {{ form_widget(form.CardNumber, {'attr': {'class': 'form-control inputContact marginInput', 'pattern': '[0-9]{16}', 'title': '16 chiffres sont requis'}}) }}
+            <div class="marginInput displayExpiration">
+                {{ form_errors(form.ExpirationMonth) }}
+                {{ form_widget(form.ExpirationMonth, {'attr': {'class': 'form-control inputContact', 'pattern': '[0-9]{1,2}', 'title': 'Veuillez indiquer le mois d\'expiration'}}) }}
+                {{ form_errors(form.ExpirationYear) }}
+                {{ form_widget(form.ExpirationYear, {'attr': {'class': 'form-control inputContact', 'pattern': '[0-9]{1,2}', 'title': 'Veuillez indiquer l\'année d\'expiration en 2 chiffres'}}) }}
+            </div>
+            {{ form_errors(form.Cryptogram) }}
+            {{ form_widget(form.Cryptogram, {'attr': {'class': 'form-control inputContact marginInput', 'pattern': '[0-9]{3}', 'title': 'Veuillez indiquer les 3 derniers chiffres du cryptogramme au dos de la carte'}}) }}
+            <div>
+                <button type='submit' name="submit" class='btn btn-success btnContact'>Payer</button>
+            </div>
+            {{ form_end(form) }}
+        </div>
+    </div>
+    <div id="navStrip"></div>
+        {% include('default/footer.html.twig') %}
+    </div>
+{% endblock %}
