@@ -2,6 +2,10 @@
 # https://symfony.com/doc/current/security.html
 security:
 
+      access_control:
+                - { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+                - { path: ^/transaction, roles: IS_AUTHENTICATED_FULLY }
+
     encoders:
         AppBundle\Entity\Users:
           algorithm: bcrypt
@@ -24,3 +28,4 @@ security:
             form_login:
               login_path: login
               check_path: login
+
