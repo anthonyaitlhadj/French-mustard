@@ -10,7 +10,7 @@
         <div class="container marginBody centerForm">
             {% for product in products %}
                 <div class="col-xs-3" id="article">
-                    <a href=""> <img src="{{ asset('images/face.jpg') }}"></a>
+                    <a href="{{ path('article', {'id':product.id}) }}"> <img src="{{ asset('images/face.jpg') }}"></a>
                     <h4>{{ product.ProductName }}</h4>
                     <h4 class="price">€{{ product.amount }}</h4>
                 </div>

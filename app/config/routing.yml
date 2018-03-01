@@ -9,3 +9,9 @@ login:
 shop:
     path: /showproduct
     defaults: {_controller: AppBundle:AddProduct:ShowData}
+
+article:
+    path: /showproduct/{id}
+    defaults: {_controller: AppBundle:AddProduct:Detail}
+    requirements:
+            id:  \d+
